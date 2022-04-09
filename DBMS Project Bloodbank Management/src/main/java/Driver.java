@@ -22,7 +22,7 @@ public class Driver extends Application {
             ConnectToDatabase.createDB();
             con = ConnectToDatabase.getConnection();
         }
-        if(!doesTableExist("signUpInfo"))
+        if(!DatabaseSetup.doesTablesExist("signUpInfo"))
         {
             DatabaseSetup.createTables();
         }
@@ -43,10 +43,5 @@ public class Driver extends Application {
         Parent root = FXMLLoader.load(Driver.class.getResource(fxml));
         stg.setScene(new Scene(root));
     }
-    public static boolean doesTableExist(String tableName) throws SQLException {
-        DatabaseMetaData databaseMetaData = ConnectToDatabase.getConnection().getMetaData();
-        ResultSet rs = databaseMetaData.getTables(null,null,tableName.toUpperCase(Locale.ROOT),null);
-        if(rs.next()) return true;
-        else return false;
-    }
+ 
 }
