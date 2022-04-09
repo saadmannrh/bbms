@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="870.0" prefWidth="1206.0" style="-fx-background-color: #212121;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HomeController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1206.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@BackgroudImg.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="donateBtn" layoutX="251.0" layoutY="67.0" mnemonicParsing="false" onAction="#onDonateBtn" style="-fx-background-color: #de1f26; -fx-background-radius: 12;" text="Donate" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="adminLogInBtn" layoutX="765.0" layoutY="67.0" mnemonicParsing="false" onAction="#onAdminLogInBtn" style="-fx-background-color: #de1f26; -fx-background-radius: 12;" text="Admin Log In" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="searchbtn" layoutX="621.0" layoutY="67.0" mnemonicParsing="false" onAction="#onSearchBtn" style="-fx-background-color: #de1f26; -fx-background-radius: 12;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="stockBtn" layoutX="417.0" layoutY="67.0" mnemonicParsing="false" onAction="#onStockBtn" style="-fx-background-color: #de1f26; -fx-background-radius: 12;" text="Blood Stock" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
